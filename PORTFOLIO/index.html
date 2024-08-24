@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="icon-for-portfolio.png">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="head">
+        <img src="aishu.jpg" alt="" class="img">
+        <a href="#" class="logo">Aishwarya</a>  
+        <nav class="nav">
+            <a href="#home">Home</a>      
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="home-cnt">
+            <h1>Hi I'm Aishwarya Saravanan!</h1>
+            <h3>Front End Developer</h3>
+            <p>I have a passion for creating intuitive and engaging user interfaces. With a keen eye for design and a commitment to innovation, I strive to deliver exceptional digital experiences. Let's connect and create something amazing together! To know more ⇓
+            </p>
+            <a href="#about" id="aboutMeButton">About me</a>
+           
+        </div>
+    </section>
+    <div class="con">
+        <a href="https://www.linkedin.com/in/aishwaryasaran/"><i class='bx bxl-linkedin' id="ct"></i></a>
+        <a href="https://github.com/aishwarya-saravanan10"><i class='bx bxl-github'id=ct ></i></a>
+        <a href="mailto:saravananaishwarya10@gmail.com"><i class='bx bx-envelope' id="ct"></i></a>
+    </div>
+    <section id="about">
+        <h2>About</h2>
+       
+        <p>I'm currently a third-year student pursuing a Bachelor of Engineering in Computer Science Engineering at Hindusthan Institute of Technology. My academic journey has equipped me with a strong foundation in various programming languages and technologies, with a particular focus on front-end development and UI/UX design.
+            <br>
+            <br>
+            My interest in UI/UX design has driven me to continuously explore innovative ways to create user-friendly and visually appealing interfaces. I have completed comprehensive courses in HTML, CSS, and JavaScript from GUVI, which have enabled me to build and design both static and dynamic web pages. These projects have honed my skills in translating design concepts into functional and responsive web experiences.
+            <br>
+            <br>
+            In addition to my technical expertise, I am deeply committed to enhancing user interaction and experience. My goal is to bridge the gap between users and technology by crafting intuitive and engaging digital solutions. I am always eager to learn and adopt new trends and technologies in UI/UX design to stay ahead in this dynamic field.
+            <br>
+            <br>
+            With a strong foundation in computer science and a keen eye for design, I am enthusiastic about contributing to projects that prioritize user experience and innovative design solutions. I look forward to leveraging my skills and passion to make a meaningful impact in the world of UI/UX design. </p>
+    </section>
+    <section id="skills">
+        
+        <h3 id="skill" style="color: purple; padding-top: 100px;">Technical & Programming Languages</h3>
+        <div class="skill">          
+                <li><i class="bx bxl-html5" id="icon"></i>
+                    <h4>HTML</h4><progress value="90" Max="100" style="--progress-color:violet; --progress-value: 90;"></progress>
+                </li>
+            
+            
+          
+            <li><i class="bx bxl-css3"></i><h4>CSS</h4>
+                <progress value="80" Max="100" style="--progress-color:violet; --progress-value: 80;"></progress>
+            </li>
+          
+            <li><i class="bx bxl-javascript"></i><h4>JavaScript</h4>
+                <progress value="70" Max="100" style="--progress-color: violet; --progress-value: 70;"></progress>
+            </li>
+          
+            <li><i class="bx bxl-python"></i><h4>Python</h4>
+                <progress value="90" Max="100" style="--progress-color:violet; --progress-value: 90;"></progress>
+            </li>
+          
+            <li><i class="bx bxl-java"></i><h4>Java</h4>
+                <progress value="60" Max="100" style="--progress-color:violet; --progress-value: 60;"></progress>
+            </li>
+          </div>
+          <section id="projects">
+            <h2>My Projects</h2>
+
+
+            <div class="project-grid">
+                <div class="project" data-category="web">
+                    <span class="project-topic">VEGGIE-KING</span>
+                    <img src="prj-vk.png" alt="" height="100px">
+                    <p>Veggie King is a frontend project showcasing responsive design and clean UI for an online vegetable store. Built with HTML, CSS, and JavaScript, it highlights effective layout and smooth user interactions. </p>
+                    <a href="https://github.com/aishwarya-saravanan10/VEGGIE-KING" target="_blank">View Code</a>
+                    <a href="https://veggie-king.netlify.app/" target="_blank">Live Demo</a>
+                </div>
+                
+    
+          </section>
+          <section id="resume">
+            <div class="resume">
+                 <a href="resume.pdf" download="resume.pdf" id="downloadLink" style="text-decoration: none;"><button>My Resume</button></a>
+            </div>
+          </section>
+          <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+                <p id="statusMessage"></p>
+            </form>
+    
+          </section>
+          
+  
+  
+        
+                
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    color: black;
+    background-color:white;
+
+}
+.head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left:-100px;
+    border: 1px solid purple;
+    box-shadow: 2px 1px 2px rgb(146, 146, 146);
+}
+.logo{
+    position: relative;
+    font-size: 28px;
+    color:purple;
+    text-decoration: none;
+    font-weight: 600;
+    padding-right: 415px;
+
+}
+
+.nav a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .5s;
+    cursor: pointer;
+    
+}
+.nav a:hover{
+    color: rgba(128, 0, 128, 0.885); 
+}
+.nav a.active{
+    color: purple;
+}
+#home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+    letter-spacing: 1px;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+    
+}
+
+.home-cnt{
+    max-width: 600px;
+}
+.home-cnt h1{
+    font-size: 30px;
+    font-weight: 700px;
+}
+.home-cnt h3{
+    font-size:20px;
+    font-weight: 600px;
+    margin: 10px 0 10px;
+    color: rgba(161, 46, 161, 0.885);
+}
+.home-cnt p{
+    font-size: 15.6 px;
+    margin: 20px 0 40px;
+    line-height: 1.2;
+    font-family: 'Times New Roman', Times, serif;
+    word-spacing: 1px;
+}
+#aboutMeButton{
+     width: 150px;
+     height: 50px;
+     display: flex;
+     justify-content: space-between;
+     padding:30px;
+     border: 2px solid purple;
+     border-radius: 50px;
+     text-align:center;
+     align-items: center;
+     font-weight: 600;
+     letter-spacing: 1px;
+     background-color: white;
+     color:purple;
+     text-decoration: none;
+     
+    
+}
+#aboutMeButton:hover{
+    color: purple;
+    background-color: rgba(255, 198, 255, 0.777);
+}
+.con{
+    position: absolute;
+    bottom: 5px;
+    width: 150px;
+    left: 10%;
+    display: flex;
+    justify-content: space-between
+    
+}
+.con a{
+    position: relative;
+    display: inline-flex;
+    width: 200px;
+    height: 200px;
+    text-decoration: none;
+    color: purple;
+    padding-top: 120px;  
+}
+#ct{
+    width: 45px;
+    height: 45px;
+    border: 2px solid purple;
+    border-radius: 50%;
+    padding-top: 12.5px;
+    padding-left: 13px;
+    background-color: rgba(255, 198, 255, 0.738);
+}
+i:hover{
+    color: purple;
+    background-color: white;
+    transition: .2s;
+}
+#about{
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#about p{
+    margin-left: 200px;
+    margin-right: 250px;
+    padding-bottom: 140px;
+    
+}
+#about h2{
+    margin-left: 145.5px;
+    color: purple;
+    padding-bottom: 50px;
+    padding-top: 170px;
+}
+
+
+#skills{
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+#skills h2{
+   
+    margin-left: 145.5px;
+}
+#skills h3{
+    padding-top: 100px;
+    padding: 10px;
+    margin-left: 145.5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: -1px;
+    
+}
+
+.skill li{
+    list-style: none;
+    margin-left: 250px;
+    padding: 10px;
+}
+#skills i{
+    margin-left: 150px;
+    margin-bottom: 0;
+}
+.skill{
+    width: 500px;
+    margin-bottom: 100px;
+}
+
+.skill i{
+    align-items: start;
+    width: 45px;
+    height: 45px;
+    border: 2px solid purple;
+    border-radius: 50%;
+    padding-top: 12.5px;
+    padding-left: 13px;
+    background-color: rgba(255, 198, 255, 0.738);
+}
+.bar{
+    background:white;
+    display: block;
+    height: 15px;
+    border: 1px solid purple;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px violet, 0 1px 2px rgb(250, 68, 250);
+    transition: all 0.3s cubic-bezier(.24,.8,.22,1);
+}
+.bar:hover{
+    box-shadow: 0 1px 3px black, 0 1px 2px gray;
+}
+
+.html{
+    width: 100%;
+    animation: html 3s;
+}
+.css{
+    width: 100%;
+    animation: css 3s;
+}
+.js{
+    width: 100%;
+    animation: js 3s;
+}
+.python{
+    width: 100%;
+    animation: python 3s;
+}
+.java{
+    width: 100%;
+    animation: java 3s;
+}
+progress {
+    width: 100%;
+    height: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 1px gray;
+  }
+  
+  progress::-webkit-progress-bar {
+    background-color: #e0e0e0;
+  }
+  
+  progress::-webkit-progress-value {
+    background-color: var(--progress-color);
+    border-radius: 10px;
+    animation: progress-animation 2s ease-out forwards;
+    width: 0; /* Start with 0 width */
+  }
+  
+  progress::-moz-progress-bar {
+    background-color: var(--progress-color);
+    border-radius: 10px;
+    animation: progress-animation 2s ease-out forwards;
+    width: 0; /* Start with 0 width */
+  }
+  #icon{
+       margin-right: 180px;
+  }
+  
+  @keyframes progress-animation {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: calc(var(--progress-value) * 1%);
+    }
+  }
+  
+  /* For browsers that do not support ::-webkit-progress-value or ::-moz-progress-bar */
+  progress[value]::before {
+    content: '';
+    display: block;
+    height: 100%;
+    background-color: var(--progress-color);
+    animation: fill-animation 2s ease-out forwards;
+    width: 0; /* Start with 0 width */
+  }
+  
+  @keyframes fill-animation {
+    from {
+      width: 0;
+    }
+    to {
+      width: calc(var(--progress-value) * 1%);
+    }
+  }
+  #projects{
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+#projects {
+    padding: 50px;
+    text-align: center;
+}
+
+.filter-controls {
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #555;
+}
+#projects h2{
+    margin-left: 30px;
+    padding-bottom: 10px;
+    color: purple;
+} 
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    
+}
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width:min-content;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project p{
+    text-align: start;
+}
+.project.hidden {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+}
+
+.project-topic {
+    margin-left: 0px;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 10px;
+}
+.project a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+}
+
+
+
+#resume{
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    text-align: center;
+   
+
+}
+.resume{
+    align-items: center;
+    text-decoration:none ;
+    padding: 70px;
+    padding-top: 290px;
+}
+.resume a button {
+    width: 160px;
+     height: 50px;
+     display: flex;
+     justify-content: space-between;
+     padding: 30px;
+    
+     border: 2px solid purple;
+     border-radius: 50px;
+     text-align:center;
+     align-items: center;
+     font-weight: 600;
+     letter-spacing: 1px;
+     background-color: white;
+     color:purple;
+     text-decoration: none;
+     margin-left: 700px;
+}
+.resume a button:hover{
+    color: purple;
+    background-color: rgba(255, 198, 255, 0.777);
+}
+#contact{
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+#contact {
+    margin-top: 350px;
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    color: purple;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: purple;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    align-items: center;
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color:white;
+    color:purple;
+    border: 1px solid purple;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color:rgba(255, 198, 255, 0.777);
+    color:purple;
+}
+
+
+#statusMessage {
+    margin-top: 20px;
+    font-size: 16px;
+    color: green;
+}
+  
+
+
+
+
+
